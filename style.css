@@ -7,122 +7,59 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: url(https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  background: url(/img/background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  background-color: rgb(255, 249, 249);
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+  background-color: rgba(255, 249, 249, 0.856);
+  width: 70vw;
   border-radius: 10px;
   text-align: center;
-  margin: auto;
-  transform: translateY(15vh);
+  padding: 15px;
+  margin: 15px;
 }
 
-.logo {
-  height: 80px;
-  margin: 5px;
+h1 {
+  font-size: 1.8rem;
 }
 
-header h1 {
-  margin: 5px;
-  font-size: 2rem;
+form {
+  padding: 5px;
 }
 
-header p {
-  margin: 2px 5px 20px;
-}
-
-.email label,
-.password label {
+section label {
   display: block;
-  text-align: center;
-}
-
-.email input,
-.password input {
-  background-color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 15px;
-  height: 30px;
-  width: 60%;
-  padding: 5px 15px;
-  margin: 5px;
-  outline: none;
-}
-
-.remember {
-  margin: 5px 0;
-}
-
-.remember input {
-  cursor: pointer;
+  margin-top: 10px;
 }
 
 .submit input {
   margin: 10px 0;
-  color: white;
-  background-color: #e95744;
-  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #e95744, #9cd9dd);
+  padding: 8px 15px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
-footer {
-  padding-bottom: 15px;
+.submit input:hover {
+  background: linear-gradient(50deg, #ff6d5a, #82e4eb);
 }
 
-.icons-login img {
-  width: 35px;
-  height: 35px;
-  margin: 10px 0;
-  cursor: pointer;
-}
-
-.register a {
+footer a {
   text-decoration: none;
   color: #e95744;
 }
 
-.register a:hover {
-  color: rgb(34, 156, 255);
-}
-
-@media only screen and (max-device-width: 700px) {
-  .container {
-    width: 300px;
-  }
-}
-
-@media screen and (max-device-width: 400px) {
-  .container {
-    width: 200px;
-  }
-
-  .logo {
-    width: 70px;
-    height: 70px;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  .email input,
-  .password input {
-    width: 80%;
-  }
-
-  .icons-login img {
-    width: 25px;
-    height: 25px;
-  }
+footer a:hover {
+  color: #9b1b0a;
 }
