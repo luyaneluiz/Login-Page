@@ -26,46 +26,47 @@
           <section>
             <div class="name">
               <div class="first-name">
-                <label for="name">Name</label>
-                <input type="text" />
+                <label for="name">Name <span>*</span></label>
+                <input type="text" required />
               </div>
               <div class="surname">
-                <label for="Surname">Surname</label>
-                <input type="text" />
+                <label for="Surname">Surname <span>*</span></label>
+                <input type="text" required />
               </div>
             </div>
             <div class="select">
               <div class="gener">
-                <label for="Gener">Gener</label>
-                <select name="Gener">
+                <label for="Gener">Gener <span>*</span></label>
+                <select name="Gener" required>
+                  <option value=""></option>
                   <option value="Man">Man</option>
                   <option value="Woman">Woman</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
               <div class="birth">
-                <label for="Birthday">Birthday</label>
-                <input type="date" />
+                <label for="Birthday">Birthday <span>*</span></label>
+                <input type="date" required />
               </div>
             </div>
             <div class="email">
-              <label for="email">E-mail</label>
-              <input type="email" />
+              <label for="email">E-mail <span>*</span></label>
+              <input type="email" required />
             </div>
             <div class="password">
               <div class="pass">
-                <label for="password">Password</label>
-                <input type="password" />
+                <label for="password">Password <span>*</span></label>
+                <input type="password" class="pass1" required />
               </div>
               <div class="repeat-pass">
-                <label for="password">Repeat Password</label>
-                <input type="password" />
+                <label for="password">Repeat Password <span>*</span></label>
+                <input type="password" class="pass2" required />
               </div>
             </div>
           </section>
 
           <div class="submit">
-            <input type="submit" value="REGISTER" />
+            <button type="button" onclick="Validar()">REGISTER</button>
           </div>
         </form>
       </main>
@@ -76,5 +77,12 @@
         </p>
       </footer>
     </div>
+
+    <div class="alert">
+      <h3 class="close" onclick="closeAlert()">X</h3>
+      <p class="msgAlert"></p>
+    </div>
+
+    <script src="./register.js"></script>
   </body>
 </html>

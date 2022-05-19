@@ -28,6 +28,45 @@ label {
   margin: 0 8px;
 }
 
+span {
+  color: brown;
+}
+
+.alert {
+  display: none;
+}
+
+.alert.active {
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.alert.active h3 {
+  position: absolute;
+  right: 0;
+  padding: 3px 10px;
+  color: rgb(64, 61, 61);
+  cursor: pointer;
+}
+
+.alert.active p {
+  border-top: 2px solid grey;
+  margin-top: 35px;
+  padding: 25px;
+  height: 83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container.alertOn {
+  filter: blur(3px);
+}
+
 @media (min-width: 700px) {
   .container {
     padding: 15px 40px;

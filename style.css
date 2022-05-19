@@ -40,7 +40,7 @@ section label {
   margin-top: 10px;
 }
 
-.submit input {
+button {
   margin: 10px 0;
   color: rgb(255, 255, 255);
   background: linear-gradient(90deg, #e95744, #9cd9dd);
@@ -49,9 +49,10 @@ section label {
   border: none;
   cursor: pointer;
   transition: all 0.5s ease;
+  font-weight: 600;
 }
 
-.submit input:hover {
+button:hover {
   background: linear-gradient(50deg, #ff6d5a, #82e4eb);
 }
 
