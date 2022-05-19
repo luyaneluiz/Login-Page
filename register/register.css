@@ -10,6 +10,11 @@ section select {
   outline: none;
 }
 
+input.invalido,
+#invalido {
+  border: 1px solid #b31212;
+}
+
 .select {
   display: flex;
 }
@@ -30,6 +35,11 @@ label {
 
 span {
   color: brown;
+}
+
+span.erro {
+  display: flex;
+  margin-left: 6px;
 }
 
 .alert {
