@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="login.css" />
-    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="shortcut icon" href="../img/logo.png" />
     <title>Login</title>
   </head>
 
@@ -14,7 +14,7 @@
     <div class="container">
       <header>
         <img
-          src="img/logo.png"
+          src="../img/logo.png"
           alt="logo ovelha laranja"
           style="height: 80px"
         />
@@ -22,15 +22,15 @@
         <p>Sign in to your account.</p>
       </header>
       <main>
-        <form>
+        <form action="./loginTest.php" method="POST">
           <section>
             <div class="email">
               <label for="email">E-mail</label>
-              <input type="email" />
+              <input type="email" name="email" />
             </div>
             <div class="password">
               <label for="password">Password</label>
-              <input type="password" />
+              <input type="password" name="password" />
             </div>
           </section>
           <div class="remember">
@@ -38,14 +38,14 @@
             <label for="remember">Remember me</label>
           </div>
           <div class="submit">
-            <input type="submit" value="SIGN IN" />
+            <button type="submit" name="submit">SIGN IN</button>
           </div>
         </form>
       </main>
       <footer>
         <p>
           Don't have an account?
-          <a href="./register/register.html">Register.</a>
+          <a href="../register/register.php">Register.</a>
         </p>
       </footer>
     </div>
